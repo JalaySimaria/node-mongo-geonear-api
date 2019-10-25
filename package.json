@@ -1,0 +1,49 @@
+{
+	"name": "node-mongo-geonear-api",
+	"version": "1.0.0",
+	"description": "NodeJS Koa2 MongoDB REST API demo",
+	"author": {
+		"name": "Jalay Simaria",
+		"email": "jalay.simaria18@gmail.com",
+		"url": "http://jalay.in"
+	},
+	"contributors": [
+		{
+			"name": "Jalay Simaria",
+			"email": "jalay.simaria18@gmail.com",
+			"url": "http://jalay.in"
+		}
+	],
+	"engines": {
+		"node": ">= 10.0.0"
+	},
+	"main": "src/app",
+	"scripts": {
+		"start:dev": "NODE_PATH=./src NODE_ENV=dev nodemon --inspect src/app.js | pino-pretty",
+		"start:prod": "NODE_PATH=./src NODE_ENV=prod node src/app.js"
+	},
+	"dependencies": {
+		"glob": "^7.1.5",
+		"koa": "^2.10.0",
+		"koa-bodyparser": "^4.2.1",
+		"koa-helmet": "^5.2.0",
+		"koa-pino-logger": "^2.1.3",
+		"koa-respond": "^2.1.0",
+		"koa-router": "^7.4.0",
+		"mongoose": "^5.7.6"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.4",
+		"pino-pretty": "^3.2.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JalaySimaria/node-mongo-geonear-api.git"
+	},
+	"keywords": [],
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JalaySimaria/node-mongo-geonear-api/issues"
+	},
+	"homepage": "https://github.com/JalaySimaria/node-mongo-geonear-api#readme"
+}
